@@ -32,7 +32,20 @@
 </head>
 
 <body>
-  
+
+<!-- Google Search Results Page Custom Search Engine -->
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "https:thatspecialflavor.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://thatspecialflavor.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
 
 <!-- Facebook SDK -->
 <script>
@@ -105,11 +118,15 @@ google.setOnLoadCallback(function() {
   orderByOptions['keys'] = [{label: 'Relevance', key: ''} , {label: 'Date', key: 'date'}];
   customSearchOptions['enableOrderBy'] = true;
   customSearchOptions['orderByOptions'] = orderByOptions;
+  var imageSearchOptions = {};
+  imageSearchOptions['layout'] = 'google.search.ImageSearch.LAYOUT_POPUP';
+  customSearchOptions['enableImageSearch'] = true;
   customSearchOptions['overlayResults'] = true;
   var customSearchControl =   new google.search.CustomSearchControl('012560408662179104851:dzyry0iwkde', customSearchOptions);
   customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
   var options = new google.search.DrawOptions();
   options.setAutoComplete(true);
+  customSearchControl.setAutoCompletionId('012560408662179104851:dzyry0iwkde+qtype:1');
   customSearchControl.draw('cse', options);
 }, true);
 </script>
