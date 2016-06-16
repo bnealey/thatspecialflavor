@@ -3,12 +3,12 @@
 [debug] CLI Version:  3.0.2
 [debug] Platform:     win32
 [debug] Node Version: v6.2.1
-[debug] Time:         Thu Jun 16 2016 01:45:47 GMT-0400 (Eastern Daylight Time)
+[debug] Time:         Thu Jun 16 2016 09:50:06 GMT-0400 (Eastern Daylight Time)
 [debug] ----------------------------------------------------------------------
 [debug] 
 [info] Starting Firebase development server...
 [info] 
-[info] Project Directory: c:\Users\bneal\OneDrive\p\thatspecialflavor
+[info] Project Directory: C:\Users\bneal\OneDrive\p\thatspecialflavor
 [info] Public Directory: public
 [info] 
 [info] Server listening at: http://localhost:5000
